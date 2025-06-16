@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: socat-proxy
+  labels:
+    app: socat-proxy
+spec:
+  containers:
+  - name: socat
+    image: alpine/socat:latest
+    args:
+      - TCP-LISTEN:5432,fork
+      - TCP:db.hk-dev.evcloud.live:5432
+    ports:
+      - containerPort: 5432
+    resources:
+      requests:
+        memory: "128Mi"  # Minimum memory required
+        cpu: "100m"      # Minimum CPU required
+      limits:
+        memory: "512Mi" # Maximum memory allowed
+        cpu: "500m"     # Maximum CPU allowed

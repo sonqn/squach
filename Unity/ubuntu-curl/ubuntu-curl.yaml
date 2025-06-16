@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-curl
+  namespace: druid
+  labels:
+    app: ubuntu-curl
+spec:
+  containers:
+    - name: ubuntu
+      image: ubuntu:22.04
+      command: ["/bin/sh", "-c", "--"]
+      args:
+        - |
+          apt-get update && \
+          apt-get install -y curl && \
+          curl -XPOST -H 'Content-Type: application/json' -d @/data/test-datasource.json http://druid-tiny-cluster-routers:8088/druid/indexer/v1/supervisor && \
+          sleep 3600
+      volumeMounts:
+        - name: config-volume
+          mountPath: /data
+  volumes:
+    - name: config-volume
+      configMap:
+        name: test-datasource-config
+  restartPolicy: Never

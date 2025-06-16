@@ -1,0 +1,2856 @@
+{
+  "type": "kafka",
+  "spec": {
+    "dataSchema": {
+      "dataSource": "test",
+      "timestampSpec": {
+        "column": "ts",
+        "format": "millis",
+        "missingValue": null
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+          {
+            "type": "string",
+            "name": "payload.ADAS_UnsafeAlerts_IsCollisionWarning",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.ADAS_UnsafeAlerts_IsHarshBraking",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.ADAS_UnsafeAlerts_IsHarshCornering",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Cameras_Camera1_IsOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Cameras_Camera2_IsOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Cameras_Camera3_IsOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Cameras_Camera4_IsOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Cameras_Camera5_IsOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Cameras_Camera6_IsOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Cameras_Camera7_IsOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Cameras_Camera8_IsOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Horn_IsActive",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Lights_IsHazardOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Lights_IsLowBeamOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Mirrors_Left_IsMirrorOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Trunk_Front_IsLocked",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Trunk_Front_IsOpen",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Trunk_Rear_IsLocked",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Body_Trunk_Rear_IsOpen",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_DoorAutoLockIsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row1_Left_IsLocked",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row1_Left_IsOpen",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row1_Left_Window_Position",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row1_Right_IsLocked",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row1_Right_IsOpen",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row1_Right_Window_Position",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row2_Left_IsLocked",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row2_Left_IsOpen",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row2_Left_Window_Position",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row2_Right_IsLocked",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row2_Right_IsOpen",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Door_Row2_Right_Window_Position",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_GloveBox_IsLocked",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_GloveBox_IsOpen",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_IsAirConditioningActive",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_IsClimateActive",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_IsFrontDefrosterActive",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_IsRearDefrosterActive",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_Station_Row1_Left_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_Station_Row1_Right_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_Station_Row2_Left_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_Station_Row2_Right_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_Station_Row3_Left_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_Station_Row3_Right_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_Station_Row4_Left_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_HVAC_Station_Row4_Right_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_IsDomeOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_IsGloveBoxOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_IsTrunkOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row1_IsLeftOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row1_IsRightOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row1_IsSharedOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row2_IsLeftOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row2_IsRightOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row2_IsSharedOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row3_IsLeftOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row3_IsRightOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row3_IsSharedOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row4_IsLeftOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row4_IsRightOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Lights_Spotlight_Row4_IsSharedOn",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row1_Pos1_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row1_Pos1_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row1_Pos2_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row1_Pos2_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row1_Pos3_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row1_Pos3_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row2_Pos1_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row2_Pos1_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row2_Pos2_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row2_Pos2_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row2_Pos3_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row2_Pos3_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row3_Pos1_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row3_Pos1_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row3_Pos2_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row3_Pos2_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row3_Pos3_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Seat_Row3_Pos3_IsClimateEngaged",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Cabin_Sunroof_Position",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Accelerator_PedalPosition",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row1_Wheel_Left_Brake_PadWear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row1_Wheel_Left_Tire_IsPressureLow",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row1_Wheel_Left_Tire_Pressure",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row1_Wheel_Right_Brake_PadWear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row1_Wheel_Right_Tire_IsPressureLow",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row1_Wheel_Right_Tire_Pressure",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row2_Wheel_Left_Brake_PadWear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row2_Wheel_Left_Tire_IsPressureLow",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row2_Wheel_Left_Tire_Pressure",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row2_Wheel_Right_Brake_PadWear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row2_Wheel_Right_Tire_IsPressureLow",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Axle_Row2_Wheel_Right_Tire_Pressure",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_Brake_PedalPosition",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Chassis_SteeringWheel_Heating",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Identifier_Issuer",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Identifier_Subject",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver10_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver10_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver10_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver10_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver10_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver1_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver1_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver1_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver1_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver1_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver2_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver2_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver2_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver2_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver2_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver3_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver3_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver3_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver3_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver3_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver4_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver4_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver4_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver4_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver4_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver5_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver5_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver5_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver5_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver5_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver6_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver6_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver6_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver6_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver6_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver7_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver7_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver7_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver7_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver7_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver8_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver8_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver8_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver8_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver8_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver9_PersonalData_Clear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver9_PersonalData_Hide",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver9_PrivacyMode_Expiration",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver9_PrivacyMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Driver_Profile_Driver9_Remove",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.OBD_DTCList",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_AccumulatedBrakingEnergy",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_AccumulatedChargedEnergy",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_AccumulatedConsumedEnergy",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_ChargeCurrent_DC",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase1",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase2",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase3",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_ChargeLimit",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_ChargePortFlap",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_ChargeRate",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_IsCharging",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_IsChargingCableConnected",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_Temperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Charging_TimeToComplete",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_Range",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_TractionBattery_StateOfCharge_Displayed",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_Transmission_PerformanceMode",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Powertrain_Transmission_SelectedGear",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_Acceleration_Lateral",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_Acceleration_Longitudinal",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_Acceleration_Vertical",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_AngularVelocity_Pitch",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_AngularVelocity_Roll",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_AngularVelocity_Yaw",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_ArrivalAlert_IsSignaled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CampMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_IsSignaled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot1_EndTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot1_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot1_StartTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot1_Weekdays",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot2_EndTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot2_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot2_StartTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot2_Weekdays",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot3_EndTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot3_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot3_StartTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot3_Weekdays",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot4_EndTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot4_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot4_StartTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot4_Weekdays",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot5_EndTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot5_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot5_StartTime",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurfewAlert_Slots_Slot5_Weekdays",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurrentLocation_Altitude",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurrentLocation_Heading",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurrentLocation_HorizontalAccuracy",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurrentLocation_Latitude",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurrentLocation_Longitude",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_CurrentLocation_VerticalAccuracy",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_Exterior_AirTemperature",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_GeofenceAlert_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_GeofenceAlert_IsSignaled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_GeofenceAlert_Latitude",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_GeofenceAlert_Longitude",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_GeofenceAlert_Points",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_LowVoltageSystemState",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_PetMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_SentryMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_Speed",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_SpeedAlert_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_SpeedAlert_IsSignaled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_SpeedAlert_MaxSpeed",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_SpeedAlert_PercentOverSpeedSign",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_StolenMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_SummonMode_Action",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_SummonMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_TimeRangeAlert_Interval",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_TimeRangeAlert_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_TimeRangeAlert_IsSignaled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_TravelledDistance",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_ValetMode_IsAlerted",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "payload.Vehicle_ValetMode_IsEnabled",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "long",
+            "name": "schema_id",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": false
+          },
+          {
+            "type": "string",
+            "name": "vin",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "vehicle_id",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "state",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": false
+          },
+          {
+            "type": "string",
+            "name": "log",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": false
+          },
+          {
+            "type": "long",
+            "name": "ts",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": false
+          }
+        ],
+        "dimensionExclusions": [
+          "__time"
+        ],
+        "includeAllDimensions": false,
+        "useSchemaDiscovery": false
+      },
+      "metricsSpec": [],
+      "granularitySpec": {
+        "type": "uniform",
+        "segmentGranularity": "DAY",
+        "queryGranularity": {
+          "type": "none"
+        },
+        "rollup": false,
+        "intervals": []
+      },
+      "transformSpec": {
+        "filter": null,
+        "transforms": []
+      }
+    },
+    "ioConfig": {
+      "topic": "test",
+      "topicPattern": null,
+      "inputFormat": {
+        "type": "avro_stream",
+        "flattenSpec": {
+          "useFieldDiscovery": true,
+          "fields": [
+            {
+              "type": "path",
+              "name": "payload.ADAS_UnsafeAlerts_IsCollisionWarning",
+              "expr": "$.payload.ADAS_UnsafeAlerts_IsCollisionWarning",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.ADAS_UnsafeAlerts_IsHarshBraking",
+              "expr": "$.payload.ADAS_UnsafeAlerts_IsHarshBraking",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.ADAS_UnsafeAlerts_IsHarshCornering",
+              "expr": "$.payload.ADAS_UnsafeAlerts_IsHarshCornering",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Cameras_Camera1_IsOn",
+              "expr": "$.payload.Body_Cameras_Camera1_IsOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Cameras_Camera2_IsOn",
+              "expr": "$.payload.Body_Cameras_Camera2_IsOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Cameras_Camera3_IsOn",
+              "expr": "$.payload.Body_Cameras_Camera3_IsOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Cameras_Camera4_IsOn",
+              "expr": "$.payload.Body_Cameras_Camera4_IsOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Cameras_Camera5_IsOn",
+              "expr": "$.payload.Body_Cameras_Camera5_IsOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Cameras_Camera6_IsOn",
+              "expr": "$.payload.Body_Cameras_Camera6_IsOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Cameras_Camera7_IsOn",
+              "expr": "$.payload.Body_Cameras_Camera7_IsOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Cameras_Camera8_IsOn",
+              "expr": "$.payload.Body_Cameras_Camera8_IsOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Horn_IsActive",
+              "expr": "$.payload.Body_Horn_IsActive",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Lights_IsHazardOn",
+              "expr": "$.payload.Body_Lights_IsHazardOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Lights_IsLowBeamOn",
+              "expr": "$.payload.Body_Lights_IsLowBeamOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Mirrors_Left_IsMirrorOn",
+              "expr": "$.payload.Body_Mirrors_Left_IsMirrorOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Trunk_Front_IsLocked",
+              "expr": "$.payload.Body_Trunk_Front_IsLocked",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Trunk_Front_IsOpen",
+              "expr": "$.payload.Body_Trunk_Front_IsOpen",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Trunk_Rear_IsLocked",
+              "expr": "$.payload.Body_Trunk_Rear_IsLocked",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Body_Trunk_Rear_IsOpen",
+              "expr": "$.payload.Body_Trunk_Rear_IsOpen",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_DoorAutoLockIsEnabled",
+              "expr": "$.payload.Cabin_DoorAutoLockIsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row1_Left_IsLocked",
+              "expr": "$.payload.Cabin_Door_Row1_Left_IsLocked",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row1_Left_IsOpen",
+              "expr": "$.payload.Cabin_Door_Row1_Left_IsOpen",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row1_Left_Window_Position",
+              "expr": "$.payload.Cabin_Door_Row1_Left_Window_Position",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row1_Right_IsLocked",
+              "expr": "$.payload.Cabin_Door_Row1_Right_IsLocked",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row1_Right_IsOpen",
+              "expr": "$.payload.Cabin_Door_Row1_Right_IsOpen",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row1_Right_Window_Position",
+              "expr": "$.payload.Cabin_Door_Row1_Right_Window_Position",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row2_Left_IsLocked",
+              "expr": "$.payload.Cabin_Door_Row2_Left_IsLocked",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row2_Left_IsOpen",
+              "expr": "$.payload.Cabin_Door_Row2_Left_IsOpen",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row2_Left_Window_Position",
+              "expr": "$.payload.Cabin_Door_Row2_Left_Window_Position",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row2_Right_IsLocked",
+              "expr": "$.payload.Cabin_Door_Row2_Right_IsLocked",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row2_Right_IsOpen",
+              "expr": "$.payload.Cabin_Door_Row2_Right_IsOpen",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Door_Row2_Right_Window_Position",
+              "expr": "$.payload.Cabin_Door_Row2_Right_Window_Position",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_GloveBox_IsLocked",
+              "expr": "$.payload.Cabin_GloveBox_IsLocked",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_GloveBox_IsOpen",
+              "expr": "$.payload.Cabin_GloveBox_IsOpen",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_IsAirConditioningActive",
+              "expr": "$.payload.Cabin_HVAC_IsAirConditioningActive",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_IsClimateActive",
+              "expr": "$.payload.Cabin_HVAC_IsClimateActive",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_IsFrontDefrosterActive",
+              "expr": "$.payload.Cabin_HVAC_IsFrontDefrosterActive",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_IsRearDefrosterActive",
+              "expr": "$.payload.Cabin_HVAC_IsRearDefrosterActive",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_Station_Row1_Left_Temperature",
+              "expr": "$.payload.Cabin_HVAC_Station_Row1_Left_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_Station_Row1_Right_Temperature",
+              "expr": "$.payload.Cabin_HVAC_Station_Row1_Right_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_Station_Row2_Left_Temperature",
+              "expr": "$.payload.Cabin_HVAC_Station_Row2_Left_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_Station_Row2_Right_Temperature",
+              "expr": "$.payload.Cabin_HVAC_Station_Row2_Right_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_Station_Row3_Left_Temperature",
+              "expr": "$.payload.Cabin_HVAC_Station_Row3_Left_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_Station_Row3_Right_Temperature",
+              "expr": "$.payload.Cabin_HVAC_Station_Row3_Right_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_Station_Row4_Left_Temperature",
+              "expr": "$.payload.Cabin_HVAC_Station_Row4_Left_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_HVAC_Station_Row4_Right_Temperature",
+              "expr": "$.payload.Cabin_HVAC_Station_Row4_Right_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_IsDomeOn",
+              "expr": "$.payload.Cabin_Lights_IsDomeOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_IsGloveBoxOn",
+              "expr": "$.payload.Cabin_Lights_IsGloveBoxOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_IsTrunkOn",
+              "expr": "$.payload.Cabin_Lights_IsTrunkOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row1_IsLeftOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row1_IsLeftOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row1_IsRightOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row1_IsRightOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row1_IsSharedOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row1_IsSharedOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row2_IsLeftOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row2_IsLeftOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row2_IsRightOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row2_IsRightOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row2_IsSharedOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row2_IsSharedOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row3_IsLeftOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row3_IsLeftOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row3_IsRightOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row3_IsRightOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row3_IsSharedOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row3_IsSharedOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row4_IsLeftOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row4_IsLeftOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row4_IsRightOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row4_IsRightOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Lights_Spotlight_Row4_IsSharedOn",
+              "expr": "$.payload.Cabin_Lights_Spotlight_Row4_IsSharedOn",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row1_Pos1_Heating",
+              "expr": "$.payload.Cabin_Seat_Row1_Pos1_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row1_Pos1_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row1_Pos1_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row1_Pos2_Heating",
+              "expr": "$.payload.Cabin_Seat_Row1_Pos2_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row1_Pos2_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row1_Pos2_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row1_Pos3_Heating",
+              "expr": "$.payload.Cabin_Seat_Row1_Pos3_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row1_Pos3_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row1_Pos3_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row2_Pos1_Heating",
+              "expr": "$.payload.Cabin_Seat_Row2_Pos1_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row2_Pos1_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row2_Pos1_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row2_Pos2_Heating",
+              "expr": "$.payload.Cabin_Seat_Row2_Pos2_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row2_Pos2_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row2_Pos2_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row2_Pos3_Heating",
+              "expr": "$.payload.Cabin_Seat_Row2_Pos3_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row2_Pos3_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row2_Pos3_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row3_Pos1_Heating",
+              "expr": "$.payload.Cabin_Seat_Row3_Pos1_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row3_Pos1_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row3_Pos1_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row3_Pos2_Heating",
+              "expr": "$.payload.Cabin_Seat_Row3_Pos2_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row3_Pos2_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row3_Pos2_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row3_Pos3_Heating",
+              "expr": "$.payload.Cabin_Seat_Row3_Pos3_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Seat_Row3_Pos3_IsClimateEngaged",
+              "expr": "$.payload.Cabin_Seat_Row3_Pos3_IsClimateEngaged",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Cabin_Sunroof_Position",
+              "expr": "$.payload.Cabin_Sunroof_Position",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Accelerator_PedalPosition",
+              "expr": "$.payload.Chassis_Accelerator_PedalPosition",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row1_Wheel_Left_Brake_PadWear",
+              "expr": "$.payload.Chassis_Axle_Row1_Wheel_Left_Brake_PadWear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row1_Wheel_Left_Tire_IsPressureLow",
+              "expr": "$.payload.Chassis_Axle_Row1_Wheel_Left_Tire_IsPressureLow",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row1_Wheel_Left_Tire_Pressure",
+              "expr": "$.payload.Chassis_Axle_Row1_Wheel_Left_Tire_Pressure",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row1_Wheel_Right_Brake_PadWear",
+              "expr": "$.payload.Chassis_Axle_Row1_Wheel_Right_Brake_PadWear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row1_Wheel_Right_Tire_IsPressureLow",
+              "expr": "$.payload.Chassis_Axle_Row1_Wheel_Right_Tire_IsPressureLow",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row1_Wheel_Right_Tire_Pressure",
+              "expr": "$.payload.Chassis_Axle_Row1_Wheel_Right_Tire_Pressure",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row2_Wheel_Left_Brake_PadWear",
+              "expr": "$.payload.Chassis_Axle_Row2_Wheel_Left_Brake_PadWear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row2_Wheel_Left_Tire_IsPressureLow",
+              "expr": "$.payload.Chassis_Axle_Row2_Wheel_Left_Tire_IsPressureLow",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row2_Wheel_Left_Tire_Pressure",
+              "expr": "$.payload.Chassis_Axle_Row2_Wheel_Left_Tire_Pressure",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row2_Wheel_Right_Brake_PadWear",
+              "expr": "$.payload.Chassis_Axle_Row2_Wheel_Right_Brake_PadWear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row2_Wheel_Right_Tire_IsPressureLow",
+              "expr": "$.payload.Chassis_Axle_Row2_Wheel_Right_Tire_IsPressureLow",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Axle_Row2_Wheel_Right_Tire_Pressure",
+              "expr": "$.payload.Chassis_Axle_Row2_Wheel_Right_Tire_Pressure",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_Brake_PedalPosition",
+              "expr": "$.payload.Chassis_Brake_PedalPosition",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Chassis_SteeringWheel_Heating",
+              "expr": "$.payload.Chassis_SteeringWheel_Heating",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Identifier_Issuer",
+              "expr": "$.payload.Driver_Identifier_Issuer",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Identifier_Subject",
+              "expr": "$.payload.Driver_Identifier_Subject",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver10_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver10_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver10_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver10_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver10_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver10_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver10_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver10_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver10_Remove",
+              "expr": "$.payload.Driver_Profile_Driver10_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver1_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver1_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver1_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver1_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver1_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver1_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver1_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver1_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver1_Remove",
+              "expr": "$.payload.Driver_Profile_Driver1_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver2_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver2_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver2_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver2_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver2_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver2_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver2_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver2_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver2_Remove",
+              "expr": "$.payload.Driver_Profile_Driver2_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver3_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver3_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver3_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver3_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver3_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver3_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver3_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver3_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver3_Remove",
+              "expr": "$.payload.Driver_Profile_Driver3_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver4_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver4_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver4_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver4_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver4_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver4_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver4_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver4_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver4_Remove",
+              "expr": "$.payload.Driver_Profile_Driver4_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver5_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver5_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver5_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver5_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver5_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver5_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver5_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver5_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver5_Remove",
+              "expr": "$.payload.Driver_Profile_Driver5_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver6_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver6_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver6_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver6_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver6_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver6_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver6_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver6_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver6_Remove",
+              "expr": "$.payload.Driver_Profile_Driver6_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver7_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver7_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver7_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver7_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver7_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver7_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver7_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver7_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver7_Remove",
+              "expr": "$.payload.Driver_Profile_Driver7_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver8_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver8_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver8_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver8_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver8_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver8_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver8_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver8_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver8_Remove",
+              "expr": "$.payload.Driver_Profile_Driver8_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver9_PersonalData_Clear",
+              "expr": "$.payload.Driver_Profile_Driver9_PersonalData_Clear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver9_PersonalData_Hide",
+              "expr": "$.payload.Driver_Profile_Driver9_PersonalData_Hide",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver9_PrivacyMode_Expiration",
+              "expr": "$.payload.Driver_Profile_Driver9_PrivacyMode_Expiration",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver9_PrivacyMode_IsEnabled",
+              "expr": "$.payload.Driver_Profile_Driver9_PrivacyMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Driver_Profile_Driver9_Remove",
+              "expr": "$.payload.Driver_Profile_Driver9_Remove",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.OBD_DTCList",
+              "expr": "$.payload.OBD_DTCList",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_AccumulatedBrakingEnergy",
+              "expr": "$.payload.Powertrain_AccumulatedBrakingEnergy",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_AccumulatedChargedEnergy",
+              "expr": "$.payload.Powertrain_TractionBattery_AccumulatedChargedEnergy",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_AccumulatedConsumedEnergy",
+              "expr": "$.payload.Powertrain_TractionBattery_AccumulatedConsumedEnergy",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_ChargeCurrent_DC",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_ChargeCurrent_DC",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase1",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase1",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase2",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase2",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase3",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_ChargeCurrent_Phase3",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_ChargeLimit",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_ChargeLimit",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_ChargePortFlap",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_ChargePortFlap",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_ChargeRate",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_ChargeRate",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_IsCharging",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_IsCharging",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_IsChargingCableConnected",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_IsChargingCableConnected",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_Temperature",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_Temperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Charging_TimeToComplete",
+              "expr": "$.payload.Powertrain_TractionBattery_Charging_TimeToComplete",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_Range",
+              "expr": "$.payload.Powertrain_TractionBattery_Range",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_TractionBattery_StateOfCharge_Displayed",
+              "expr": "$.payload.Powertrain_TractionBattery_StateOfCharge_Displayed",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_Transmission_PerformanceMode",
+              "expr": "$.payload.Powertrain_Transmission_PerformanceMode",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Powertrain_Transmission_SelectedGear",
+              "expr": "$.payload.Powertrain_Transmission_SelectedGear",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_Acceleration_Lateral",
+              "expr": "$.payload.Vehicle_Acceleration_Lateral",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_Acceleration_Longitudinal",
+              "expr": "$.payload.Vehicle_Acceleration_Longitudinal",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_Acceleration_Vertical",
+              "expr": "$.payload.Vehicle_Acceleration_Vertical",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_AngularVelocity_Pitch",
+              "expr": "$.payload.Vehicle_AngularVelocity_Pitch",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_AngularVelocity_Roll",
+              "expr": "$.payload.Vehicle_AngularVelocity_Roll",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_AngularVelocity_Yaw",
+              "expr": "$.payload.Vehicle_AngularVelocity_Yaw",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_ArrivalAlert_IsSignaled",
+              "expr": "$.payload.Vehicle_ArrivalAlert_IsSignaled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CampMode_IsEnabled",
+              "expr": "$.payload.Vehicle_CampMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_IsSignaled",
+              "expr": "$.payload.Vehicle_CurfewAlert_IsSignaled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot1_EndTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot1_EndTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot1_IsEnabled",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot1_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot1_StartTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot1_StartTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot1_Weekdays",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot1_Weekdays",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot2_EndTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot2_EndTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot2_IsEnabled",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot2_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot2_StartTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot2_StartTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot2_Weekdays",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot2_Weekdays",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot3_EndTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot3_EndTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot3_IsEnabled",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot3_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot3_StartTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot3_StartTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot3_Weekdays",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot3_Weekdays",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot4_EndTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot4_EndTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot4_IsEnabled",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot4_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot4_StartTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot4_StartTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot4_Weekdays",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot4_Weekdays",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot5_EndTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot5_EndTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot5_IsEnabled",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot5_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot5_StartTime",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot5_StartTime",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurfewAlert_Slots_Slot5_Weekdays",
+              "expr": "$.payload.Vehicle_CurfewAlert_Slots_Slot5_Weekdays",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurrentLocation_Altitude",
+              "expr": "$.payload.Vehicle_CurrentLocation_Altitude",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurrentLocation_Heading",
+              "expr": "$.payload.Vehicle_CurrentLocation_Heading",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurrentLocation_HorizontalAccuracy",
+              "expr": "$.payload.Vehicle_CurrentLocation_HorizontalAccuracy",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurrentLocation_Latitude",
+              "expr": "$.payload.Vehicle_CurrentLocation_Latitude",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurrentLocation_Longitude",
+              "expr": "$.payload.Vehicle_CurrentLocation_Longitude",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_CurrentLocation_VerticalAccuracy",
+              "expr": "$.payload.Vehicle_CurrentLocation_VerticalAccuracy",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_Exterior_AirTemperature",
+              "expr": "$.payload.Vehicle_Exterior_AirTemperature",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_GeofenceAlert_IsEnabled",
+              "expr": "$.payload.Vehicle_GeofenceAlert_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_GeofenceAlert_IsSignaled",
+              "expr": "$.payload.Vehicle_GeofenceAlert_IsSignaled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_GeofenceAlert_Latitude",
+              "expr": "$.payload.Vehicle_GeofenceAlert_Latitude",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_GeofenceAlert_Longitude",
+              "expr": "$.payload.Vehicle_GeofenceAlert_Longitude",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_GeofenceAlert_Points",
+              "expr": "$.payload.Vehicle_GeofenceAlert_Points",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_LowVoltageSystemState",
+              "expr": "$.payload.Vehicle_LowVoltageSystemState",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_PetMode_IsEnabled",
+              "expr": "$.payload.Vehicle_PetMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_SentryMode_IsEnabled",
+              "expr": "$.payload.Vehicle_SentryMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_Speed",
+              "expr": "$.payload.Vehicle_Speed",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_SpeedAlert_IsEnabled",
+              "expr": "$.payload.Vehicle_SpeedAlert_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_SpeedAlert_IsSignaled",
+              "expr": "$.payload.Vehicle_SpeedAlert_IsSignaled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_SpeedAlert_MaxSpeed",
+              "expr": "$.payload.Vehicle_SpeedAlert_MaxSpeed",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_SpeedAlert_PercentOverSpeedSign",
+              "expr": "$.payload.Vehicle_SpeedAlert_PercentOverSpeedSign",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_StolenMode_IsEnabled",
+              "expr": "$.payload.Vehicle_StolenMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_SummonMode_Action",
+              "expr": "$.payload.Vehicle_SummonMode_Action",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_SummonMode_IsEnabled",
+              "expr": "$.payload.Vehicle_SummonMode_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_TimeRangeAlert_Interval",
+              "expr": "$.payload.Vehicle_TimeRangeAlert_Interval",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_TimeRangeAlert_IsEnabled",
+              "expr": "$.payload.Vehicle_TimeRangeAlert_IsEnabled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_TimeRangeAlert_IsSignaled",
+              "expr": "$.payload.Vehicle_TimeRangeAlert_IsSignaled",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_TravelledDistance",
+              "expr": "$.payload.Vehicle_TravelledDistance",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_ValetMode_IsAlerted",
+              "expr": "$.payload.Vehicle_ValetMode_IsAlerted",
+              "nodes": null
+            },
+            {
+              "type": "path",
+              "name": "payload.Vehicle_ValetMode_IsEnabled",
+              "expr": "$.payload.Vehicle_ValetMode_IsEnabled",
+              "nodes": null
+            }
+          ]
+        },
+        "avroBytesDecoder": {
+          "type": "schema_registry",
+          "url": "http://schemaregistry.schemaregistry:8081",
+          "capacity": 2147483647,
+          "urls": null,
+          "config": null,
+          "headers": null
+        },
+        "binaryAsString": true,
+        "extractUnionsByType": false
+      },
+      "replicas": 1,
+      "taskCount": 1,
+      "taskDuration": "PT3600S",
+      "consumerProperties": {
+        "bootstrap.servers": " ev-kafka-bootstrap.dp-kafka:9092"
+      },
+      "autoScalerConfig": null,
+      "pollTimeout": 100,
+      "startDelay": "PT5S",
+      "period": "PT30S",
+      "useEarliestOffset": true,
+      "completionTimeout": "PT3600S",
+      "lateMessageRejectionPeriod": null,
+      "earlyMessageRejectionPeriod": null,
+      "lateMessageRejectionStartDateTime": null,
+      "configOverrides": null,
+      "idleConfig": null,
+      "stopTaskCount": null,
+      "stream": "test",
+      "useEarliestSequenceNumber": true
+    },
+    "tuningConfig": {
+      "type": "kafka",
+      "appendableIndexSpec": {
+        "type": "onheap",
+        "preserveExistingMetrics": false
+      },
+      "maxRowsInMemory": 1000000,
+      "maxBytesInMemory": 0,
+      "skipBytesInMemoryOverheadCheck": false,
+      "maxRowsPerSegment": 5000000,
+      "maxTotalRows": null,
+      "intermediatePersistPeriod": "PT10M",
+      "maxPendingPersists": 0,
+      "indexSpec": {
+        "bitmap": {
+          "type": "roaring"
+        },
+        "dimensionCompression": "lz4",
+        "stringDictionaryEncoding": {
+          "type": "utf8"
+        },
+        "metricCompression": "lz4",
+        "longEncoding": "longs"
+      },
+      "indexSpecForIntermediatePersists": {
+        "bitmap": {
+          "type": "roaring"
+        },
+        "dimensionCompression": "lz4",
+        "stringDictionaryEncoding": {
+          "type": "utf8"
+        },
+        "metricCompression": "lz4",
+        "longEncoding": "longs"
+      },
+      "reportParseExceptions": false,
+      "handoffConditionTimeout": 0,
+      "resetOffsetAutomatically": false,
+      "segmentWriteOutMediumFactory": null,
+      "workerThreads": null,
+      "chatRetries": 8,
+      "httpTimeout": "PT10S",
+      "shutdownTimeout": "PT80S",
+      "offsetFetchPeriod": "PT30S",
+      "intermediateHandoffPeriod": "P2147483647D",
+      "logParseExceptions": false,
+      "maxParseExceptions": 2147483647,
+      "maxSavedParseExceptions": 0,
+      "numPersistThreads": 1,
+      "skipSequenceNumberAvailabilityCheck": false,
+      "repartitionTransitionDuration": "PT120S"
+    }
+  },
+  "context": null,
+  "suspended": false
+}
